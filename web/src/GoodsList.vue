@@ -14,7 +14,6 @@
                     <button><i class="fa fa-trash"></i></button>  
                 </div>
             </div>
-   
         </div>
         <div class="buttom" v-on:click="move(0)">
             <div class="subs"><i class="fa fa-chevron-left"></i></div>

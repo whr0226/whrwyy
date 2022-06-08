@@ -89,7 +89,6 @@ module.exports = {
     max-height: 80%;
     display: inline-block;
 }
-
 .menu-container>div>a {
     text-align: center;
     display: block;

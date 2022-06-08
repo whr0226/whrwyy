@@ -1,5 +1,4 @@
 <template>
-    <!-- 我是首页 welcome.vue -->
     <div class="container">
         <div class="box">
             <div class="item">

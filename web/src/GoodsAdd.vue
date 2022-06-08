@@ -28,6 +28,6 @@ module.exports = {
 
             console.log(this.good)
         }
-    }
+    } 
 }
 </script>

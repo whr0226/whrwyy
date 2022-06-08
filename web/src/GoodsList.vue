@@ -37,24 +37,29 @@ module.exports = {
         // })
         return {
             goods:[
-                {goodsname:"魈",price:120,imgurl:"/src/assets/image/xiao.png"},
-                {goodsname:"夜兰",price:648,imgurl:"/src/assets/image/yelan.png"},
-                {goodsname:"一斗",price:86,imgurl:"/src/assets/image/yidou.png"},
-                {goodsname:"魈",price:120,imgurl:"/src/assets/image/xiao.png"},
-                {goodsname:"夜兰",price:648,imgurl:"/src/assets/image/yelan.png"},
-                {goodsname:"一斗",price:86,imgurl:"/src/assets/image/yidou.png"},
-                {goodsname:"魈",price:120,imgurl:"/src/assets/image/xiao.png"},
-                {goodsname:"夜兰",price:648,imgurl:"/src/assets/image/yelan.png"},
-                {goodsname:"一斗",price:86,imgurl:"/src/assets/image/yidou.png"},
-                {goodsname:"魈",price:120,imgurl:"/src/assets/image/xiao.png"},
-                {goodsname:"夜兰",price:648,imgurl:"/src/assets/image/yelan.png"},
-                {goodsname:"一斗",price:86,imgurl:"/src/assets/image/yidou.png"},
-                {goodsname:"魈",price:120,imgurl:"/src/assets/image/xiao.png"},
-                {goodsname:"夜兰",price:648,imgurl:"/src/assets/image/yelan.png"},
-                {goodsname:"一斗",price:86,imgurl:"/src/assets/image/yidou.png"},
+                {
+                    category:"百货",
+                    goodsname:"魈",
+                    price:120,
+                    imgurl:"/src/assets/image/xiao.png",
+                    comment:"魈魈魈魈魈"
+                },
+                {
+                    category:"女装",
+                    goodsname:"夜兰",
+                    price:648,
+                    imgurl:"/src/assets/image/yelan.png",
+                    comment:"夜兰夜兰夜兰夜兰夜兰"
+                },
+                {
+                    category:"男装",
+                    goodsname:"一斗",
+                    price:86,
+                    imgurl:"/src/assets/image/yidou.png",
+                    comment:"一斗一斗一斗一斗一斗"
+                },
+                
             ],
-            one:true,
-            two:false
         }
     },
     methods: {

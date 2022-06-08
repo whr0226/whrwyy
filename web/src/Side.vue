@@ -80,7 +80,6 @@ module.exports = {
     padding: 20px 0px 40px 0px;
     background-color: #ECECEC;
 }
-
 .menu-container .logo {
     padding: 20px;
     text-align: center;

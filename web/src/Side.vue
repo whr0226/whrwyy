@@ -84,7 +84,6 @@ module.exports = {
     padding: 20px;
     text-align: center;
 }
-
 .menu-container .logo img {
     max-width: 80%;
     max-height: 80%;

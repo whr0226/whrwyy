@@ -1,7 +1,6 @@
 <template>
     <div>
         <div class="goodslist"></div>
-        <h4>这里是商品新增页面</h4>
         <div class="good-form">
             <input type="text" v-model="good.goodname"  placeholder="请输入商品名称">
             <input type="text" v-model="good.price" placeholder="请输入商品价格">

@@ -27,7 +27,7 @@
         </div>
     </div>
 </template>
-<script>
+<script>   
 module.exports = {
     props: ["n"],
     data(){

@@ -14,20 +14,19 @@
                     <button><i class="fa fa-trash"></i></button>  
                 </div>
             </div>
-
         </div>
         <div class="buttom" v-on:click="move(0)">
             <div class="subs"><i class="fa fa-chevron-left"></i></div>
             <div class="subs">1</div>
             <div class="subs">2</div>
-            <div class="subs">3</div>
-            <div class="subs">4</div>
+            <div class="subs">3</div>  
+            <div class="subs">4</div>   
             <div class="subs">5</div>
             <div class="subs"><i class="fa fa-chevron-right"></i></div>
         </div>
     </div>
 </template>
-<script>
+<script>   
 module.exports = {
     props: ["n"],
     data(){
@@ -119,4 +118,4 @@ module.exports = {
         width: 90%;
         height: 150px;
     }
-</style>
+</style>   

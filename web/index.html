@@ -18,24 +18,10 @@
     <script>
         axios.get("/auth/info").then((r) => {
             if (r.data === "nologin") {
-                location.href="";
+                console.log("nologin")
+                location.href="./login.html";
             }
         })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         // 表示需要在 Vue 项目中使用 Vue 路由。

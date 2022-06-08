@@ -19,11 +19,11 @@ import java.io.PrintWriter;
 public class LoginServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String user = request.getParameter("user");
+		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		if (user.equals("root")) {
+		if (username.equals("root") && password.equals("123")) {
 			HttpSession session = request.getSession();
-			session.setAttribute("U",user);
+			session.setAttribute("U",username);
 		}
 
 	}

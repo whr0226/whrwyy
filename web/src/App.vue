@@ -41,7 +41,6 @@ module.exports = {
     width: 1000px;
     margin: 0px auto;
 }
-
 .main-container {
     border: 0.5px solid #ccc;
     width: 100%;

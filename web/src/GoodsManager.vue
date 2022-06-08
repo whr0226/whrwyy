@@ -1,5 +1,6 @@
 <template>
     <div>
+    
         <!-- <h3>我是商品管理页面 goods-manager.vue</h3> -->
         <div class="manager-head">
             <div class="box">

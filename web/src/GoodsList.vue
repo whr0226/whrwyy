@@ -114,4 +114,4 @@ module.exports = {
         width: 90%;
         height: 150px;
     }
-</style>
+</style>   

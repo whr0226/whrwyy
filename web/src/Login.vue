@@ -4,12 +4,12 @@
         <div class="sign">
             <h2>电商后台管理系统</h2>
             <div class="user">
-                <div class="fa fa-user"></div>
+                <i class="fa fa-user"></i>
                 <input type="text" class="kuang" v-model="user.username">
                 <!-- <div class="kuang"></div> -->
             </div>
             <div class="lock">
-                <div class="fa fa-lock"></div>
+                <i class="fa fa-lock"></i>
                 <input type="text" class="kuang" v-model="user.password">
             </div>
             <div class="denglu">
@@ -187,5 +187,8 @@ module.exports = {
             width: 100px;
             background-color: rgb(200, 206, 206);
             margin: 20px 30%;
+        }
+        a {
+            text-decoration: none;
         }
 </style>

@@ -23,14 +23,6 @@ module.exports = {
         sendSty(s) {
             console.log("APP",s)
         },
-        gethello() {
-            let p = axios.get("http://localhost:8080/hello");
-            p.then(
-                (r) => {
-                    console.log(r.data);
-                }
-            );
-        },
     },
 };
 </script>

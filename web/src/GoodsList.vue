@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="goodlist">
-            <div v-for="good in goods" v-bind:key="good" class="goodone">
+            <div v-for="(good, m) in goods" v-bind:key="m" class="goodone">
                 <img v-bind:src="good.imgurl">
                 <br>
                 <div>
@@ -9,9 +9,8 @@
                     {{good.goodsname}}
                 </div>
                 <div>
-                    {{n}}
-                    <button><i class="fa fa-pencil"></i></button>
-                    <button><i class="fa fa-trash"></i></button>  
+                    <button><i class="fa fa-pencil" v-on:click="edit(m)"></i></button>
+                    <a><i class="fa fa-trash" v-on:click="deletegood(m)"></i></a>  
                 </div>
             </div>
         </div>
@@ -28,41 +27,36 @@
 </template>
 <script>   
 module.exports = {
-    props: ["n"],
     data(){
-        // let p = axios.get("/sendGoods");
-        // p.then((r) => {
-        //     this.goods = r;
-        // })
+        let localgoods = JSON.parse(localStorage.getItem("goods"));
         return {
-            goods:[
-                {
-                    category:"百货",
-                    goodsname:"魈",
-                    price:120,
-                    imgurl:"/src/assets/image/xiao.png",
-                    comment:"魈魈魈魈魈"
-                },
-                {
-                    category:"女装",
-                    goodsname:"夜兰",
-                    price:648,
-                    imgurl:"/src/assets/image/yelan.png",
-                    comment:"夜兰夜兰夜兰夜兰夜兰"
-                },
-                {
-                    category:"男装",
-                    goodsname:"一斗",
-                    price:86,
-                    imgurl:"/src/assets/image/yidou.png",
-                    comment:"一斗一斗一斗一斗一斗"
-                },
-                
-            ],
+            goods:localgoods
         }
     },
     methods: {
-        
+        deletegood(m) {
+            let localcategorys = JSON.parse(localStorage.getItem("categorys"));
+            let localgoods = JSON.parse(localStorage.getItem("goods"));
+            for (i in localgoods) {
+                if (i*1 === m) {
+                    console.log(localgoods[i].category)
+                    for (j in localcategorys) {
+                        
+                        if (localgoods[i].category === localcategorys[j].categoryname) {
+                            console.log(localcategorys[j].categoryname)
+                            localcategorys[j].goodsmount -= 1
+                        }
+                    }
+                    localgoods.splice(i,1)
+                }
+            }
+            localStorage.setItem("categorys", JSON.stringify(localcategorys));
+            localStorage.setItem("goods", JSON.stringify(localgoods));
+            this.$forceUpdate();
+        },
+        edit(m) {
+
+        }
     }
 }
 </script>

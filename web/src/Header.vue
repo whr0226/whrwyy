@@ -64,5 +64,6 @@
 
 .header-container .header-item:hover .dropdown-box {
     display: block;
+    z-index: 5;
 }
 </style>

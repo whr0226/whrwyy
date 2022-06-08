@@ -74,8 +74,31 @@
                 }
             ]
         });
-
-
+        let localgoods = JSON.parse(localStorage.getItem("goods"));
+        let localcategorys = JSON.parse(localStorage.getItem("categorys"));
+        // console.log(localgoods);
+        // console.log(localcategorys);
+        if (localcategorys === null) {
+            localcategorys = [
+                {categoryname:"百货",goodsmount:1},
+                {categoryname:"美妆",goodsmount:0},
+                {categoryname:"男装",goodsmount:0},
+                {categoryname:"女装",goodsmount:0},
+                {categoryname:"数码",goodsmount:0},
+                {categoryname:"母婴",goodsmount:0},
+            ]
+            localStorage.setItem("categorys",JSON.stringify(localcategorys));
+        }
+        if (localgoods === null) {
+            localgoods = [{
+                category:"百货",
+                goodsname:"魈",
+                price:120,
+                imgurl:"/src/assets/image/xiao.png",
+                comment:"魈魈魈魈魈"
+            }]
+            localStorage.setItem("goods",JSON.stringify(localgoods));
+        }
         new Vue({
             // router: router,
             router,

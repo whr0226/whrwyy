@@ -21,10 +21,6 @@ module.exports = {
                 price:10.00,      
                 imgurl:"src\\assets\\image\\favicon.png"
             },
-            // user:{
-            //     username:"",
-            //     password:""
-            // }
         }
     },
     methods: {

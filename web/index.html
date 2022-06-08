@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="./assets/js/vue.js"></script>
+    <script src="./assets/js/vue-router.js"></script>
+    <script src="./assets/js/httpVueLoader.js"></script>
+    <script src="./assets/js/axios.min.js"></script>
+    <script>
+        // 表示需要在 Vue 项目中使用 Vue 路由。
+        Vue.use(VueRouter);
+
+        // 加载 vue 组件
+        const App = httpVueLoader("./src/App.vue");
+        const LayoutHeader = httpVueLoader("./src/Header.vue");
+        const LayoutSide = httpVueLoader("./src/Side.vue");
+        const Welcome = httpVueLoader("./src/Welcome.vue");
+        const GoodsManager = httpVueLoader("./src/GoodsManager.vue");
+        const GoodsAdd = httpVueLoader("./src/GoodsAdd.vue");
+        const GoodsList = httpVueLoader("./src/GoodsList.vue");
+        const GoodsCategoryManager = httpVueLoader("./src/GoodsCategoryManager.vue");
+        const OtherStyle = httpVueLoader("./src/OtherStyle.vue")
+
+        Vue.component("layout-header", LayoutHeader);
+        Vue.component("layout-side", LayoutSide);
+
+        // 创建 VueRouter 的实例
+        const router = new VueRouter({
+            // 配置路由表，包含当前项目所有的访问地址及其对应的组件
+            routes: [
+                { path: "", component: Welcome },
+                {
+                    // 除了首页外，其他的顶级路由必须以 / 开头
+                    path: "/gm",
+                    component: GoodsManager,
+                    children: [
+                        {
+                            // 匹配的地址是：/gm
+                            path: "",
+                            component: GoodsList
+                        },
+                        {
+                            path: "otherstyle",
+                            component: OtherStyle
+                        },
+                        {
+                            // 匹配的地址是：/gm/add
+                            path: "add",
+                            component: GoodsAdd
+                        },
+                        {
+                            // 匹配的地址是：/gm/category
+                            path: "category",
+                            component: GoodsCategoryManager
+                        }
+                    ]
+                }
+            ]
+        });
+
+
+        new Vue({
+            // router: router,
+            router,
+            render: (h) => h(App)
+        }).$mount("#app");
+    </script>
+</body>
+
+</html>

@@ -21,7 +21,7 @@
             <div class="subs">1</div>
             <div class="subs">2</div>
             <div class="subs">3</div>
-            <div class="subs">4</div>
+            <div class="subs">4</div>   
             <div class="subs">5</div>
             <div class="subs"><i class="fa fa-chevron-right"></i></div>
         </div>

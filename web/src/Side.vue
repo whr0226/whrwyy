@@ -80,18 +80,15 @@ module.exports = {
     padding: 20px 0px 40px 0px;
     background-color: #ECECEC;
 }
-
 .menu-container .logo {
     padding: 20px;
     text-align: center;
 }
-
 .menu-container .logo img {
     max-width: 80%;
     max-height: 80%;
     display: inline-block;
 }
-
 .menu-container>div>a {
     text-align: center;
     display: block;

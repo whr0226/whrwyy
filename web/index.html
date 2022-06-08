@@ -16,11 +16,11 @@
     <script src="./assets/js/httpVueLoader.js"></script>
     <script src="./assets/js/axios.min.js"></script>
     <script>
-        // axios.get("/auth/info").then((r) => {
-        //     if (r.data === "nologin") {
-        //         location.href="www.baidu.com";
-        //     }
-        // })
+        axios.get("/auth/info").then((r) => {
+            if (r.data === "nologin") {
+                location.href="";
+            }
+        })
 
 
 

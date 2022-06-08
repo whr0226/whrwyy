@@ -9,7 +9,6 @@
             <button v-on:click="postgood">提交</button> -->
         </div>
         <!-- 用户名：<input type="text" v-model="user.username" placeholder="输入用户名">
-        密码：<input type="password" v-model="user.password" placeholder="输入密码">
         <button v-on:click="postDataToJava">提交</button> -->
     </div>
 </template>

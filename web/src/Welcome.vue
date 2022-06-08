@@ -17,7 +17,6 @@
                 <div class="one2">239,456</div>
             </div>
         </div>
-
         <div class="box">
             <div class="item2">
                 <div style="margin: 10px 0px 0px 10px;"><i class="fa fa-circle"></i>待办事项</div>

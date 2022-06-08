@@ -33,23 +33,6 @@ module.exports = {
 
             console.log(this.good)
         }
-        // getGoods() {
-        //     axios.get("/getGoods").then((r) => {
-        //         this.goods = r;
-        //     })
-        // },
-        // postDataToJava() {
-        //     axios.get("/hello",{
-        //         params:this.user
-        //     }).then((r) => {
-        //         console.log(r.data);
-        //         if(r.data == "hello") {
-        //             this.$router.push({path:"/"});
-        //         } else {
-        //             alert("错了错了！")
-        //         }
-        //     })
-        // }
     }
 }
 </script>

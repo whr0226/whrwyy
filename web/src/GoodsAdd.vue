@@ -20,6 +20,7 @@ module.exports = {
             good: {
                 goodname:"???",
                 price:10.00,
+                
                 imgurl:"src\\assets\\image\\favicon.png"
             },
             // user:{

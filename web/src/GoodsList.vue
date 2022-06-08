@@ -30,7 +30,6 @@
 module.exports = {
     props: ["n"],
     data(){
-        // 获取goods列表
         // let p = axios.get("/sendGoods");
         // p.then((r) => {
         //     this.goods = r;

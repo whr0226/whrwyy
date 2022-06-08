@@ -56,5 +56,4 @@ module.exports = {
     .container .box .item2:first-child {
         width: 55%;
     }
-
 </style>
